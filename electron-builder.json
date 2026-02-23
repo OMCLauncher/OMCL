@@ -1,14 +1,13 @@
 {
-    "appId": "com.electron.app",
+    "appId": "org.hmrbh.omcl",
     "directories": {
         "output": "dist"
     },
-
     "nsis": {
         "oneClick": false,
         "perMachine": false,
         "allowToChangeInstallationDirectory": true,
-        "shortcutName": "Electron App"
+        "shortcutName": "OMCL"
     },
     "win": {
         "target": "nsis"

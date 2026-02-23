@@ -1,7 +1,7 @@
 {
-  "name": "electron-vue-template",
+  "name": "OMCL",
   "version": "0.1.0",
-  "description": "A minimal Electron + Vue application",
+  "description": "Omni Minecraft Launcher",
   "main": "main/main.js",
   "scripts": {
     "dev": "node scripts/dev-server.js",
@@ -10,11 +10,7 @@
     "build:mac": "node scripts/build.js && electron-builder --mac",
     "build:linux": "node scripts/build.js && electron-builder --linux"
   },
-  "repository": "https://github.com/deluze/electron-vue-template",
-  "author": {
-    "name": "Deluze",
-    "url": "https://github.com/Deluze"
-  },
+  "repository": "https://github.com/OMCLauncher/OMCL",
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.1",
     "chalk": "^4.1.2",
