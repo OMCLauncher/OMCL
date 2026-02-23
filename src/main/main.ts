@@ -1,10 +1,10 @@
-import {app, BrowserWindow, ipcMain, session} from 'electron';
-import {join} from 'path';
+import {app, BrowserWindow, ipcMain, Menu, session} from 'electron';
+import path, {join} from 'path';
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1020,
+    height: 630,
     webPreferences: {
       preload: join(__dirname, 'preload.js'),
       nodeIntegration: false,
@@ -19,6 +19,8 @@ function createWindow () {
   else {
     mainWindow.loadFile(join(app.getAppPath(), 'renderer', 'index.html'));
   }
+  
+  Menu.setApplicationMenu(null);
 }
 
 app.whenReady().then(() => {
