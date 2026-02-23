@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import TitleBar from './components/TitleBar.vue';
 import HelloWorld from './components/HelloWorld.vue'
 
 window.electronAPI.sendMessage('Hello from App.vue!');
 </script>
 
 <template>
+  <TitleBar />
   <HelloWorld msg="你好啊，欢迎来到OMCL" />
 </template>
 
-<style scoped>
+<style>
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
